@@ -1,0 +1,22 @@
+axios.post('/signup', {
+              email,
+              uid: auth.user.uid
+
+            })
+            .then(userInfo => {
+              console.log(userInfo);
+              dispatch({
+                type: 'ADD_USERINFO',
+                userInfo
+              })
+            })
+            .catch(err => {
+              alert(err);
+            })
+
+
+doctor2@email.com
+qwerqwer
+
+test123@gmail.com
+123456
